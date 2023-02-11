@@ -7,6 +7,8 @@
   - [Installation](#installation)
   - [Documentation](#documentation)
 
+[![Example Output](examples/simple_example.png)](examples/simple_example.go)
+
 **golog** implements a logging infrastructure for Go. It focuses on performance, while providing a simple API.
 
 ## Installation

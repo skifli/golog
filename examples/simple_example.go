@@ -44,5 +44,5 @@ func main() {
 		"warning",
 	)
 	logger.Error("This is an error.", nil)
-	logger.Panic(errors.New("This is a panic on an error"), nil)
+	logger.Panic(errors.New("This is a panic on an error."), nil)
 }
