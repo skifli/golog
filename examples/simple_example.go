@@ -14,6 +14,8 @@ func main() {
 		panic(err)
 	}
 
+	// Create the logger with the logs already configured.
+	// Logs can also be added / removed later.
 	logger := golog.NewLogger([]*golog.Log{
 		golog.NewLog(
 			[]*os.File{
@@ -28,8 +30,6 @@ func main() {
 			golog.FormatterJSON,
 		),
 	})
-
-	logger.AddLogs([]*golog.Log{})
 
 	defer func() {
 		logger.Info("Recovered from the panic.", nil)
