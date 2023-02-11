@@ -61,14 +61,12 @@ func (logger *Logger) Panicf(msg string, fields Fields, format ...any) {
 // Logs a message with the specified fields, using ERROR as the log level.
 func (logger *Logger) Error(msg string, fields Fields) {
 	logger.log(ERROR, fields, msg)
-	os.Exit(1)
 }
 
 // Formats the message, and then logs it with the specified fields, using ERROR
 // as the log level.
 func (logger *Logger) Errorf(msg string, fields Fields, format ...any) {
 	logger.log(ERROR, fields, fmt.Sprintf(msg, format...))
-	os.Exit(1)
 }
 
 // Logs a message with the specified fields, using WARNING as the log level.

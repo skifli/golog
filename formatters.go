@@ -50,7 +50,15 @@ func FormatterHuman(
 	width, _, err := term.GetSize(int(os.Stderr.Fd()))
 	check(err)
 
-	str := fmt.Sprintf("%s[%s] %s%s%s %s", LevelColours[level], now.Format("02 Jan 2006 15:04:05 MST"), level, strings.Repeat(" ", LongestLevel-len(level)), LevelColours["RESET"], msg)
+	str := fmt.Sprintf(
+		"%s[%s] %s%s%s %s",
+		LevelColours[level],
+		now.Format("02 Jan 2006 15:04:05 MST"),
+		level,
+		strings.Repeat(" ", LongestLevel-len(level)),
+		LevelColours["RESET"],
+		msg,
+	)
 
 	var fieldsBuilder strings.Builder
 
