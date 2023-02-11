@@ -20,7 +20,7 @@ go get github.com/skifli/golog
 After this command has been run, **golog** is ready to use. You can find the source code of your installation in:
 
 ```
-$GOPATH/src/pkg/github.com/skifli/golog
+$GOPATH/src/pkg/mod/github.com/skifli/golog@VERSION_INSTALLED
 ```
 
 You can use **`go get -u`** to update the package.
@@ -30,5 +30,7 @@ You can use **`go get -u`** to update the package.
 See the [godoc reference](https://pkg.go.dev/github.com/skifli/golog), or run:
 
 ```
-godoc github.com/skifli/golog
+godoc -http localhost:6060
 ```
+
+and navigate to [http://localhost:6060/pkg/github.com/skifli/golog/](http://localhost:6060/pkg/github.com/skifli/golog/).
