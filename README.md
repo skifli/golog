@@ -1,7 +1,7 @@
 # golog 
 
-[![GoDoc](https://godoc.org/skifli/golog?status.svg)](https://godoc.org/skifli/golog)
 [![Go Report Card](https://goreportcard.com/badge/github.com/skifli/golog)](https://goreportcard.com/report/github.com/skifli/golog)
+[![GoDoc](https://godoc.org/github.com/skifli/golog?status.svg)](https://godoc.org/github.com/skifli/golog)
 ![Lines of Code](https://img.shields.io/github/languages/code-size/skifli/golog)
 
 - [golog](#golog)
