@@ -64,10 +64,10 @@ func FormatterHuman(
 
 	for key, value := range fields {
 		// Convert the fields into a string.
-		fieldsBuilder.WriteString(key + "=" + fmt.Sprintf("%v", value))
+		fieldsBuilder.WriteString(key + "=" + fmt.Sprintf("%#v ", value))
 	}
 
-	fieldsStr := fieldsBuilder.String()
+	fieldsStr := strings.TrimSuffix(fieldsBuilder.String(), " ")
 
 	// Work out the amount of characters between 'str' and the end of the console.
 	padding := width - len(str)
