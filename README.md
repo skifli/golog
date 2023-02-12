@@ -5,10 +5,9 @@
 ![Lines of Code](https://img.shields.io/github/languages/code-size/skifli/golog)
 
 - [golog](#golog)
-  - [Installation](#installation)
-  - [Documentation](#documentation)
-
-[![Example Output](examples/simple_example.png)](examples/simple_example.go)
+	- [Installation](#installation)
+	- [Example](#example)
+	- [Documentation](#documentation)
 
 **golog** implements a logging infrastructure for Go. It focuses on performance, while providing a simple API.
 
@@ -20,20 +19,18 @@
 go get github.com/skifli/golog
 ```
 
-After this command has been run, **golog** is ready to use. You can find the source code of your installation in:
+After this command has been run, **golog** is ready to use. **golog** can be updated by using *go get -u*:
 
 ```
-$GOPATH/src/pkg/mod/github.com/skifli/golog@VERSION_INSTALLED
+go get -u github.com/skifli/golog
 ```
 
-You can use **`go get -u`** to update the package.
+## Example
+
+The [example](examples/simple_example.go) demonstrates the majority of the features found in **golog**.
+
+[![Example Output](examples/simple_example.png)](examples/simple_example.go)
 
 ## Documentation
 
-See the [godoc reference](https://pkg.go.dev/github.com/skifli/golog), or run:
-
-```
-godoc -http localhost:6060
-```
-
-and navigate to [http://localhost:6060/pkg/github.com/skifli/golog/](http://localhost:6060/pkg/github.com/skifli/golog/).
+See the [godoc reference](https://pkg.go.dev/github.com/skifli/golog).

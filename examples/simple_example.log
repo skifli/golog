@@ -1,7 +1,14 @@
-{"level":"DEBUG","msg":"This is a debug message.","time":1676130655}
-{"level":"INFO","msg":"Some useful text...","time":1676130655}
-{"level":"WARNING","msg":"This is a warning message - you can even add fields.","service":"golog","time":1676130655}
-{"level":"ERROR","msg":"This is an error.","time":1676130655}
-{"level":"ERROR","msg":"This is a panic on an error.","time":1676130655}
-{"level":"INFO","msg":"Recovered from the panic.","time":1676130655}
-{"level":"FATAL","msg":"And this is a fatal error. Goodbye.","time":1676130655}
+{"level":"DEBUG","msg":"this is a debug message","time":1676197309}
+{"level":"INFO","msg":"some useful text","time":1676197309}
+{"level":"WARNING","msg":"this is a warning message - you can even add fields","service":"golog","time":1676197309}
+{"level":"ERROR","msg":"this is an error","time":1676197309}
+{"level":"ERROR","msg":"this is a panic on an error","time":1676197309}
+{"level":"INFO","msg":"recovered from the panic 'this is a panic on an error'","time":1676197309}
+{"level":"FATAL","msg":"and this is a fatal error","time":1676197309}
+{"level":"DEBUG","msg":"this is a debug message","time":1676197318}
+{"level":"INFO","msg":"some useful text","time":1676197318}
+{"level":"WARNING","msg":"this is a warning message - you can even add fields","service":"golog","time":1676197318}
+{"level":"ERROR","msg":"this is an error","time":1676197318}
+{"level":"ERROR","msg":"this is a panic on an error","time":1676197318}
+{"level":"INFO","msg":"recovered from the panic 'this is a panic on an error'","time":1676197318}
+{"level":"FATAL","msg":"and this is a fatal error","time":1676197318}
