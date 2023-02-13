@@ -18,7 +18,7 @@ var logger = golog.NewLogger([]*golog.Log{
 })
 
 func main() {
-	logFile, err := os.OpenFile("simple_example.log", os.O_CREATE|os.O_APPEND, 0777)
+	logFile, err := os.OpenFile("simple_example.log", os.O_CREATE|os.O_APPEND|os.O_WRONLY, 0777)
 
 	if err != nil {
 		logger.Panic(err, nil)
