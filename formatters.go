@@ -72,14 +72,19 @@ func FormatterHuman(
 	// Work out the amount of characters between 'str' and the end of the console.
 	padding := width - len(str)
 
-	// If 'str' spans multiple lines.
-	if padding < 0 {
-		// Double negate it (make it positive).
-		padding = -padding
-	}
+	if padding > 0 {
+		// Remove the length of 'fieldsStr' from the padding.
+		padding -= len(fieldsStr)
+	} else {
+		padding = width - ((len(str) % width) - 9) - len(fieldsStr)
 
-	// Remove the length of 'fieldsStr' from the padding.
-	padding -= len(fieldsStr)
+		// Console is *very* small
+		if padding < 0 {
+			padding = 1
+		}
+
+		fmt.Println(len(str), width, padding)
+	}
 
 	// Add the padding.
 	str += strings.Repeat(" ", padding)
