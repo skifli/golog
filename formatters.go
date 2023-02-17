@@ -70,12 +70,9 @@ func FormatterHuman(
 	fieldsStr := strings.TrimSuffix(fieldsBuilder.String(), " ")
 
 	// Work out the amount of characters between 'str' and the end of the console.
-	padding := width - len(str)
+	padding := width - len(str) - len(fieldsStr)
 
-	if padding > 0 {
-		// Remove the length of 'fieldsStr' from the padding.
-		padding -= len(fieldsStr)
-	} else {
+	if padding < 0 {
 		padding = width - ((len(str) % width) - 9) - len(fieldsStr)
 
 		// Console is *very* small
